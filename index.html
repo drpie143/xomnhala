@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anh khoa dep giai</title>
+    <!-- Import Dynapuff từ Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dynapuff&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link tới file CSS bên ngoài -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Đã xóa phần đám mây -->
+    <!-- MAIN PAGE -->
+    <div id="mainPage">
+      <!-- TRANG 1: HERO -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">WEB CÁ ĐỘ BÓNG ĐÁ</h1>
+        </div>
+      </section>
+      <!-- TRANG 2: ẢNH VÒNG TRÒN -->
+      <section class="image-section">
+        <div class="image-grid">
+          <div class="image-item">
+            <img
+              src="z6009995069749_793206ca25bcc948a6573ea66b43f744.jpg"
+              alt="Người 11"
+            />
+            <p>Jack</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="z6009995069749_793206ca25bcc948a6573ea66b43f744.jpg"
+              alt="Người 22"
+            />
+            <p>J97</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="z6009995069749_793206ca25bcc948a6573ea66b43f744.jpg"
+              alt="Người 3"
+            />
+            <p>Bố bé Sol</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="z6009995069749_793206ca25bcc948a6573ea66b43f744.jpg"
+              alt="Người 4"
+            />
+            <p>3.5M</p>
+          </div>
+        </div>
+      </section>
+      <!-- TRANG 3: SỰ KIỆN -->
+      <section class="event-section">
+        <div class="event-selector">
+          <select id="eventSelect" onchange="navigateEvent()">
+            <option value="">Chọn sự kiện</option>
+            <option value="Cấp 3">Cấp 3</option>
+            <option value="Tết 2025">Tết 2025</option>
+            <option value="8/3/2025">8/3/2025</option>
+          </select>
+        </div>
+      </section>
+    </div>
+    <!-- EVENT GALLERY: Sẽ được load động theo sự kiện -->
+    <section class="event-gallery" id="eventGallery">
+      <button id="backBtn" class="back-btn">Quay lại</button>
+      <h1 id="eventTitle">Gallery Event</h1>
+      <div class="gallery">
+        <!-- Các ảnh sẽ được load theo cấu hình của event -->
+      </div>
+    </section>
+    <!-- Modal hiển thị ảnh fullscreen -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img id="modalImage" src="" alt="Ảnh toàn màn hình" />
+        <a id="downloadBtn" class="download-btn" href="" download>Tải về</a>
+      </div>
+    </div>
+    <!-- Link tới file JavaScript bên ngoài -->
+    <script src="script.js"></script>
+  </body>
+</html>
