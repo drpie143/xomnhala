@@ -120,7 +120,7 @@ const eventGalleries = {
     background: "background_event.jpg",
     images: [
       {
-        src: "video.mp4",
+        src: "video_8.3.mp4",
         alt: "Ảnh 8/3/2025 1",
         download: "video.mp4",
         style: "width: 130px; height: auto;",
