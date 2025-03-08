@@ -54,6 +54,7 @@ body {
 ----------------------------------------- */
 /* TRANG CHÍNH */
 /* TRANG 1: HERO */
+/* TRANG 1: HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -64,17 +65,19 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
-  color: #0d9fd9;
+  color: #0a0909;
 }
 .hero-title {
   font-family: "Arial", cursive;
-  font-size: 4.5rem;
-  white-space: nowrap;
+  font-size: 3rem;
+  /* Bỏ thuộc tính animation typeIn */
+  /* white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid rgba(255, 255, 255, 0.75);
   width: 0;
-  animation: typeIn 3s forwards;
+  animation: typeIn 5s forwards; */
 }
+
 @keyframes typeIn {
   from {
     width: 0;
