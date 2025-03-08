@@ -1,3 +1,33 @@
+/* ---------- Typewriter Effect ---------- */
+function typeWriter(element, text, speed, callback) {
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else if (callback) {
+      callback();
+    }
+  }
+  type();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroText1 = document.getElementById("hero-text1");
+  const heroText2 = document.getElementById("hero-text2");
+
+  const text1 = "Chào mừng bạn đến với trang web của Xóm Nhà Lá";
+  const text2 = "Đây là nơi chúng tớ lưu giữ kỉ niệm";
+
+  // Hiển thị text1 trước, sau đó text2 sau 500ms khi text1 đã chạy xong
+  typeWriter(heroText1, text1, 100, function () {
+    setTimeout(function () {
+      typeWriter(heroText2, text2, 100);
+    }, 500);
+  });
+});
+
 /* ---------- Fade Transition Functions ---------- */
 function fadeOut(element, callback) {
   element.style.opacity = 0;
